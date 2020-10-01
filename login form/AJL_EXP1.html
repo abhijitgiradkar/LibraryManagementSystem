@@ -14,7 +14,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
-  width: 30%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -27,9 +27,9 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: 3px solid #ccc;;
   cursor: pointer;
-  width: 30%;
+  width: 50%;
 }
 
 button:hover {
@@ -43,27 +43,24 @@ button:hover {
 }
 
 .imgcontainer {
-  text-align: center;
+  text-align: right;
   margin: 24px 0 12px 0;
+  padding: 10px 10px 10px 1px;
 }
 
 img.avatar {
   width: 40%;
   border-radius: 50%;
 }
-.abhi{
-  margin: 8px 0;
-  padding: 16px 18px;
-  width: 30%;
-  margin: 8px 0;
-}
+
 
 .container {
-  padding: 16px;
+  
+  padding: 20px;
 }
 
 span.psw {
-  float: right;
+  float: center;
   padding-top: 16px;
 }
 
@@ -74,7 +71,7 @@ span.psw {
      float: none;
   }
   .cancelbtn {
-     width: 30%;
+     width: 50%;
   }
 }
 </style>
@@ -85,12 +82,12 @@ span.psw {
 		<h2>Login Form</h2>
 
 <form action="/action_page.php" method="post" >
-  <div class="imgcontainer">
-    <img src="19-1User-512.png" alt="Avatar" class="avatar" align = "right">
-  </div>
 
-  <div class="container">
 
+ <div class="container" style="background-color:#f1f1f1">
+    <div class="imgcontainer">
+  	<img src="19-1User-512.png" alt="Avatar" class="avatar" align= "right" >
+</div>
     <label for="uname"><b>Username</b></label>
 	<br>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -105,11 +102,12 @@ span.psw {
 
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
-  </div>
-
-  <div class="abhi" style="background-color:#f1f1f1">
+	<br>
+	<span class="psw">Forgot <a href="#">password?</a></span>
+  
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+	
+    
   </div>
 </form>
 
