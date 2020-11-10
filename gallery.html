@@ -13,6 +13,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+     <script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+  $("#show").click(function(){
+    $("img").show();
+  });
+});
+</script> 
+
+
     <style>
       body {
         margin: 0;
@@ -200,6 +212,11 @@
     <div class="jumbotron text-center" style="background-color: pink">
       <br />
       <h3>Gallery Images</h3>
+
+      <button id="hide" type="button" class="btn btn-default">hide</button>
+    <button id="show" type="button" class="btn btn-default">show</button>
+
+
     </div>
 
     <div class="container-fluid">
