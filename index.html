@@ -10,6 +10,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <script>
+$(document).ready(function(){
+  $("h1").mouseleave(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+
+
  <style>
 
  	body {
@@ -87,7 +96,7 @@
 
  <div class="jumbotron text-center"style="background-color: lightblue">
 						<br>	<img src="library(5).jpg" class="img-rounded" alt="logo" width="100" height="100"  >
-							<h1> Library Management System</h1>   
+							<h1 id="p1"> Library Management System</h1>   
 </div>
 
 <div class="topnav" id="myTopnav">
